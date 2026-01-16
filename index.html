@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>True Cost of Owning a Home (Canada)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>True Monthly Cost of Owning a Home (Canada)</h1>
+  <p>Mortgage calculators miss the real costs. This one doesn’t.</p>
+
+  <div class="container">
+    <div class="inputs">
+      <label>Home Price ($)
+        <input type="number" id="price">
+      </label>
+
+      <label>Down Payment (%)
+        <input type="number" id="down" value="20">
+      </label>
+
+      <label>Interest Rate (%)
+        <input type="number" id="rate" value="5">
+      </label>
+
+      <label>Mortgage Term (years)
+        <input type="number" id="years" value="25">
+      </label>
+
+      <label>Property Tax (monthly $)
+        <input type="number" id="tax">
+      </label>
+
+      <label>Insurance (monthly $)
+        <input type="number" id="insurance">
+      </label>
+
+      <label>Maintenance (% yearly)
+        <input type="number" id="maintenance" value="1">
+      </label>
+
+      <label>Utilities (monthly $)
+        <input type="number" id="utilities">
+      </label>
+
+      <label>Condo Fees (monthly $)
+        <input type="number" id="condo">
+      </label>
+
+      <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div class="results" id="results">
+      <h2>Total Monthly Cost</h2>
+      <p id="output">$0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
